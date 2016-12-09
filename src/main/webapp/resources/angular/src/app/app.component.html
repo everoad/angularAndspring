@@ -1,10 +1,21 @@
-<h1>
-  {{title}}
-</h1>
-<p>
-	{{ json }}
-</p>
 
-<a routerLink="/api/board" routerLinkActivce="active">Board</a>
 
-<router-outlet></router-outlet>
+<div class="wrapper">
+
+	<app-sidebar>Header..</app-sidebar>
+
+	<div class="content-side-right">
+        <!-- Interactive Slider -->
+        <div class="interactive-slider-v1 img-v3">
+            <div class="container">
+                <h2>Welcome to Unify</h2>
+                <p>Unify is a clean and fully responsive incredible Template.</p>
+            </div>
+        </div>
+        
+		<router-outlet></router-outlet>
+		<app-footer>Footer..</app-footer>
+		
+	</div>
+	
+</div>

@@ -6,6 +6,10 @@ import { AppRoutingModule } from './app-routing.module';
 
 import { AppComponent } from './app.component';
 import { BoardComponent } from './components/board/board.component';
+import { MainComponent }    from './components/main/main.component';
+
+import { SidebarComponent } from './components/template/sidebar.component';
+import { FooterComponent }  from './components/template/footer.component';
 
 
 import { AppService } from './services/app.service';
@@ -13,7 +17,10 @@ import { AppService } from './services/app.service';
 @NgModule({
   declarations: [
     AppComponent,
-    BoardComponent
+    BoardComponent,
+    MainComponent,
+    SidebarComponent,
+    FooterComponent
   ],
   imports: [
     BrowserModule,
